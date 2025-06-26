@@ -64,6 +64,36 @@ public class A_Variable {
 		isTrue = 1 + 3 > 1;
 		System.out.println("isFalse의 값 ; " + isTrue);
 		
+		// 2. 숫자형
+		// 2_1. 정수형(소숫점x)
+		byte bNum; // 1byte (-128~128)
+		
+		short sNum = 1000; // 2byte
+		
+		int iNum = 10000; // 4byte, 정수형의 기본 자료형
+		
+		long lNum = 1000000; // 8byte
+	
+		// 2_ 2. 실수형(소숫점o)
+		float fNum = 0.0f; // 4byte => 소숫점 7자리까지 표현 가능
+		
+		double dNum = 0.5; // 8byte => 소숫점 15자리까지 표현 가능, 실수형의 기본 자료형
+		
+		// 3. 문자형
+		// 3_1. 문자
+		char ch = 'a'; // 2byte 홑따옴표
+		
+		// 3_2. 문자열
+		String str = "abc"; // 참조형
+		
+		System.out.println("sNum : " + sNum);
+		System.out.println("iNum : " + iNum);
+		System.out.println("lNum : " + lNum);
+		System.out.println("fNum : " + fNum);
+		System.out.println("dNum : " + dNum);
+		System.out.println("ch : " + ch);
+		System.out.println("str : " + str);
+		
 	}
 	
 }
