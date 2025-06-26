@@ -94,6 +94,59 @@ public class A_Variable {
 		System.out.println("ch : " + ch);
 		System.out.println("str : " + str);
 		
+		// 상수의 선언
+		// [표현법] final 자료형 상수이름(대문자)
+		final int AGE = 10; //초기화
+		
+		System.out.println("AGE : " + AGE);
+		
+		// AGE = 15; 상수는 값의 변경이 불가하다.
+		
+		// 대표적인 상수의 예시
+		System.out.println("파이 : " + Math.PI);
+		
+		// * 변수 명명규칙
+		int number;
+		
+		// 1) 같은 영역 내에 중복된 이름 안됨
+		// int number;
+		int Number; // 문자열 bit뭐시기로 구분해서 됨
+		
+		// 2)예약어 안된다.
+		/*int true;
+		int class;
+		int static;
+		int public; */
+		
+		// 3) 숫자 사용 가능하나 단, 숫자로 시작하는건 안됨
+		int number1;
+		
+		//int 1number;
+		
+		// 4) 특수문자 사용가능하나 단, _랑 $ 이외에는 사용안됨
+		int number_1;
+		int _number;
+		int number$1;
+		
+		//int number!1;
+		
+		// 권장사항(개발자간의 규칙)
+		// 1) 낙타표기법(두 번째 단어부터 첫글자를 대무자로 작성)
+		String username; // 관례상 틀린 표현
+		String userName; 
+		String userNameTest;
+		
+		// 2) 한글 작성 가능하나 오류가 발생할 수 있으므로 웬만하면 영문자로
+		String 이름;
+		int 나이;
+		int age;
+		
+		/*
+		 * --정리--
+		 * ▷ 값(리터럴) : 프로그램에 필요한 명시적인 값
+		 * ▷ 변수 : 값을 저장하기 위한 공간
+		 */
+		
 	}
 	
 }
