@@ -125,4 +125,9 @@ public class D_Casting {
 		
 		
 	}
+	
+	public void method2() {
+		int a = 20;
+		int b = ++a;
+	}
 }
