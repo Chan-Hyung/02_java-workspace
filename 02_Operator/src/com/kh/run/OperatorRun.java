@@ -9,8 +9,8 @@ public class OperatorRun {
 		A_LogicalNegation a = new A_LogicalNegation();
 		//a.method1();
 		B_InDecrease b = new B_InDecrease();
-		b.method1();
-
+		//b.method1();
+		b.method2();
 	}
 
 }
