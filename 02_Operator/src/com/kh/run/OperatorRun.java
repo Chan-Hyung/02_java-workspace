@@ -36,7 +36,10 @@ public class OperatorRun {
 		//f.method1();
 		
 		G_Triple g = new G_Triple();
-		g.
+		//g.method1();
+		//g.method2();
+		//g.method3();
+		g.method6();
 	}
 
 }
