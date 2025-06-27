@@ -30,9 +30,11 @@ public class B_InDecrease {
 		System.out.println("3회 수행 : " + num2++); // 12출력 후 => 13로 증가
 		System.out.println("최종 값 : " + num1); // num1 = 13
 		
-		
-		
-		
+	}
+	public void method2() {
+		int a = 10;
+		int b = ++a;
+		System.out.printf("a : %d, b : %d\n", a, b);
 	}
 
 }
