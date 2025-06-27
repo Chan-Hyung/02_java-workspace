@@ -35,6 +35,30 @@ public class B_InDecrease {
 		int a = 10;
 		int b = ++a;
 		System.out.printf("a : %d, b : %d\n", a, b);
+		
+		int c = 10;
+		int d = c++;
+		System.out.printf("c : %d, d : %d\n", c, d);
+		
+		System.out.println("===================================================");
+		
+		int num = 20;
+		System.out.println("현재 num : "+ num); // 20
+		System.out.println("++num : " + ++num); // 21
+		System.out.println("num++ : " + num++); // 출력 후 22
+		System.out.println("--num : " + --num); // 21
+		System.out.println("num-- : " + num--); // 출력 후 20
+		System.out.println("최종 num : " + num); // 20
+		
+	} 
+	public void method3() {
+		int num1 = 20;
+		int result1 = ++num1 * 3;
+		System.out.printf("num1 : %d, result = %d : \n", num1, result1);
+		
+		int num2 = 20;
+		int result2 = num2++ * 3; // 출력 후 61
+		System.out.printf("num2 : %d, result = %d : \n", num2, result2);
 	}
 
 }
