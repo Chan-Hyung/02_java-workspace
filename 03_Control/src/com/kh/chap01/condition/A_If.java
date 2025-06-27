@@ -143,10 +143,45 @@ public class A_If {
 		System.out.print("이름 : ");
 		String name = scan.nextLine();
 		
+		/*
 		if(name == "차은우") {
 			System.out.println("차은우님 반갑습니다.");
 		}else {
 			System.out.println("안녕히가세요.");
+		}
+		*/
+		
+		/*
+		 *              1byte   1      2     4    8      4      8      2
+		 * 기본자료형 : boolean, byte, short, int, long, float, double, char
+		 * 참조자료형 : String
+		 * 
+		 * 기본자료형을 끼리 동등 비교시 ==, != 사용시 정상적으로 비교 O
+		 * 단, 참조자료형은 동등 비교시 ==, != 사용시 정상적으로 비교 X
+		 * 		=> equals() 메소드를 이용해서 비교
+		 * 		문자열.equals(문자열)
+		 */
+		
+		if(name.equals("차은우")) {
+			System.out.println("차은우님 반갑습니다.");
+		}else {
+			System.out.println("안녕히가세요.");
+		}
+		
+	}
+	
+	public void method7() { // 조건문 중첩 사용
+		System.out.print("정수(양수만) : ");
+		int num = scan.nextInt();
+		
+		if(num > 0) {
+			 if(num % 2 == 0) {
+				 System.out.println("양수이고 짝수일때");
+			 }else {
+				 System.out.println("양수는 맞고 홀수일 경우");
+			 }
+		}else {
+			System.out.println("양수 아님");
 		}
 	}
 }
