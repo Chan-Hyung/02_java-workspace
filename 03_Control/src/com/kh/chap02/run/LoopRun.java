@@ -2,6 +2,7 @@ package com.kh.chap02.run;
 
 import com.kh.chap02.loop.A_For;
 import com.kh.chap02.loop.B_While;
+import com.kh.chap02.loop.C_Dowhile;
 
 public class LoopRun {
 
@@ -26,7 +27,14 @@ public class LoopRun {
 		//b.method1();
 		//b.method2();
 		//b.method3();
-		b.method4();
+		//b.method4();
+		
+		C_Dowhile c = new C_Dowhile();
+		//c.method1();
+		//c.method2();
+		c.method3();
+		
+		
 
 	}
 
