@@ -8,9 +8,7 @@ public class Product {
 	private int price;
 	private double tax;
 	
-	public Product() {
-		System.out.println();
-	}
+	public Product() {}
 	
 	public Product(String productId, String productName, String productArea, int price, double tax) {
 		this.productId = productId;
