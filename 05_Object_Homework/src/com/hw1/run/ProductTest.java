@@ -7,16 +7,12 @@ import com.hw1.model.vo.Product;
 public class ProductTest {
 
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		Product p1 = new Product();
-		String productId = scan.nextLine();
-		String productName = scan.nextLine();
-		String productArea = scan.nextLine();
-		int price = scan.nextInt();
-		double tax = scan.nextDouble();
+		//Product p1 = new Product();
 		
 		
+		Product p1 = new Product("ssgnote9", "갤럭시노트", "경기도 수원", 960000, 10.0);
 		
+
 		Product p2 = new Product();
 		p2.setproductId("lgxnote5");
 		p2.setProductName("LG스마트폰5");
@@ -24,8 +20,18 @@ public class ProductTest {
 		p2.setprice(780000);
 		p2.setTex(0.7);
 		
-		
 		Product p3 = new Product();
+		p3.setproductId("ktsnote3");
+		p3.setProductName("KT스마트폰3");
+		p3.setProductArea("서울시 강남");
+		p3.setprice(250000);
+		p3.setTex(0.3);
+		
+		System.out.println("============================");
+		
+		p1.setprice(1200000);
+		p1.getPrice();
+		
 		
 		
 		
