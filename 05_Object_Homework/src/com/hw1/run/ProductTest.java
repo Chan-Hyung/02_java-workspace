@@ -10,30 +10,45 @@ public class ProductTest {
 		//Product p1 = new Product();
 		
 		
-		Product p1 = new Product("ssgnote9", "갤럭시노트", "경기도 수원", 960000, 10.0);
+		Product p1 = new Product("ssgnote9", "갤럭시노트9", "경기도 수원", 960000, 10.0);
 		
-
-		Product p2 = new Product();
-		p2.setproductId("lgxnote5");
-		p2.setProductName("LG스마트폰5");
-		p2.setProductArea("경기도 평택");
-		p2.setprice(780000);
-		p2.setTex(0.7);
+		Product p2 = new Product("lgxnote5", "LG스마트폰5", "경기도 평택", 780000, 0.7);
 		
-		Product p3 = new Product();
-		p3.setproductId("ktsnote3");
-		p3.setProductName("KT스마트폰3");
-		p3.setProductArea("서울시 강남");
-		p3.setprice(250000);
-		p3.setTex(0.3);
+		Product p3 = new Product("ktsnote3", "KT스마트폰3", "서울시 강남", 250000, 0.3);
 		
-		System.out.println("============================");
+		System.out.println(p1.information());
+		System.out.println(p2.information());
+		System.out.println(p3.information());
 		
-		p1.setprice(1200000);
-		p1.getPrice();
+		System.out.println("=====================================================");
 		
+		p1.setPrice(1200000);
+		p1.setTex(0.05);
+		System.out.println(p1.information());
+		p2.setPrice(1200000);
+		p2.setTex(0.05);
+		System.out.println(p2.information());
+		p3.setPrice(1200000);
+		p3.setTex(0.05);
+		System.out.println(p3.information());
 		
+		System.out.println("=====================================================");
 		
+		int a = (int)(p1.getPrice() + (p1.getPrice() * p1.getTex()));
+		int b = (int)(p2.getPrice() + (p2.getPrice() * p2.getTex()));
+		int c = (int)(p3.getPrice() + (p3.getPrice() * p3.getTex()));
+		
+		System.out.print("상품명 : " + p1.getProductName());
+		System.out.println();
+		System.out.println("부가세 포함 가격 : " + a );
+		System.out.print("상품명 : " + p2.getProductName());
+		System.out.println();
+		System.out.println("부가세 포함 가격 : " + b );
+		System.out.print("상품명 : " + p3.getProductName());
+		System.out.println();
+		System.out.println("부가세 포함 가격 : " + c );
+		
+		System.out.println("박찬형");
 		
 		
 	}
