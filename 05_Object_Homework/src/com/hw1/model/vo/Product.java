@@ -40,7 +40,7 @@ public class Product {
 		return tax;
 	}
 	
-	public void setproductId(String productId) {
+	public void setProductId(String productId) {
 		this.productId = productId;
 	}
 	
@@ -52,7 +52,7 @@ public class Product {
 		this.productArea = productArea;
 	}
 	
-	public void setprice(int price) {
+	public void setPrice(int price) {
 		this.price = price;
 	}
 	
