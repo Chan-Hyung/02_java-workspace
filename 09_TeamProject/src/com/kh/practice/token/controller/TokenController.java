@@ -3,9 +3,6 @@ package com.kh.practice.token.controller;
 import java.util.StringTokenizer;
 
 public class TokenController {		
-
-	String input = new String();
-	
 	
 	public TokenController() {
 		
@@ -13,14 +10,13 @@ public class TokenController {
 	
 	public String afterToken(String str) {
 	    StringTokenizer st = new StringTokenizer(str, " ");
-	    StringBuilder sb = new StringBuilder();
-
+	    String result = "";
 	    while (st.hasMoreTokens()) {
-	        sb.append(st.nextToken()); 
+	        result += st.nextToken();
 	    }
-
-	    return sb.toString(); 
+	    return result;
 	}
+
 
 	
 	public String firstCap(String input) {
