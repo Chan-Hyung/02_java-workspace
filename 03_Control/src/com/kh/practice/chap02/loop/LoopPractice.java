@@ -20,6 +20,25 @@ public class LoopPractice {
 	}
 	
 	public void practice2() {
+	    int num;
+
+	    do {
+	        System.out.print("1 이상의 숫자를 입력하세요 : ");
+	        num = scan.nextInt();
+
+	        if (num < 1) {
+	            System.out.println("1 이상의 숫자를 입력해주세요.");
+	        }
+	    } while (num < 1);
+
+	    for (int i = 1; i <= num; i++) {
+	        System.out.print(i + " ");
+	    }
+	}
+
+	
+	
+	public void practice3() {
 		System.out.print("1이상의 숫자를 입력하세요. : ");
 		int num1 = scan.nextInt();
 		
@@ -32,6 +51,24 @@ public class LoopPractice {
 			System.out.print(i + " ");
 		}
 	}
+	
+	public void practice4() {
+	    int num;
+
+	    do {
+	        System.out.print("1 이상의 숫자를 입력하세요 : ");
+	        num = scan.nextInt();
+
+	        if (num < 1) {
+	            System.out.println("1 이상의 숫자를 입력해주세요.");
+	        }
+	    } while (num < 1);
+
+	    for (int i = num; i >= 1; i--) {
+	        System.out.print(i + " ");
+	    }
+	}
+
 	
 	public void practice5() {
 		System.out.print("정수를 하나 입력하세요. : ");
@@ -69,6 +106,32 @@ public class LoopPractice {
 		
 	}
 	
+	public void practice7() {
+		System.out.print("첫 번째 숫자 : ");
+		int start;
+	    start = scan.nextInt();
+		System.out.print("두 번째 숫자 : ");
+	    int end;
+	    end = scan.nextInt();
+
+	    do {
+	        if (start < 1 || end < 1) {
+	            System.out.println("1 이상의 숫자를 입력해주세요.");
+	        }
+	    } while (start < 1 || end < 1);
+
+	    if (start > end) {
+	        int temp = start;
+	        start = end;
+	        end = temp;
+	    }
+
+	    for (int i = start; i <= end; i++) {
+	        System.out.print(i + " ");
+	    }
+	}
+
+	
 	public void practice8() {
 		System.out.print(" 숫자 : ");
 		int num = scan.nextInt();
@@ -98,6 +161,25 @@ public class LoopPractice {
 		System.out.println();
 	}
 	
+	public void practice10() {
+		System.out.print("9 이하의 숫자를 입력해주세요 : ");
+        int num;
+        num = scan.nextInt();
+
+	    do {
+	        if (num > 9) {
+	            System.out.println("9 이하의 숫자만 입력해주세요.");
+	        }
+	    } while (num > 9);
+
+	    for (int i = num; i <= 9; i++) {
+	        System.out.println("===== " + i + "단 =====");
+	        for (int j = 1; j <= 9; j++) {
+	            System.out.println(i + " * " + j + " = " + (i * j));
+	        }
+	    }
+	}
+	
 	public void practice11() {
 		System.out.print("시작 숫자 : ");
 		int num1 = scan.nextInt();
@@ -109,6 +191,53 @@ public class LoopPractice {
 		}
 		System.out.println();
 	}
+	
+	public void practice12() {
+	    while (true) {
+	        System.out.print("연산자(+,-,*,/,%) : ");
+	        String op = scan.next();
+
+	        if (op.equals("exit")) {
+	            System.out.println("프로그램을 종료합니다.");
+	            break;
+	        }
+
+	        if (!(op.equals("+") || op.equals("-") || op.equals("*") || op.equals("/") || op.equals("%"))) {
+	            System.out.println("없는 연산자입니다. 다시 입력해주세요.");
+	            continue;
+	        }
+
+	        System.out.print("정수1 : ");
+	        int num1 = scan.nextInt();
+
+	        System.out.print("정수2 : ");
+	        int num2 = scan.nextInt();
+
+	        if ((op.equals("/") || op.equals("%")) && num2 == 0) {
+	            System.out.println("0으로 나눌 수 없습니다. 다시 입력해주세요.");
+	            continue;
+	        }
+
+	        switch (op) {
+	            case "+":
+	                System.out.println(num1 + " + " + num2 + " = " + (num1 + num2));
+	                break;
+	            case "-":
+	                System.out.println(num1 + " - " + num2 + " = " + (num1 - num2));
+	                break;
+	            case "*":
+	                System.out.println(num1 + " * " + num2 + " = " + (num1 * num2));
+	                break;
+	            case "/":
+	                System.out.println(num1 + " / " + num2 + " = " + (num1 / num2));
+	                break;
+	            case "%":
+	                System.out.println(num1 + " % " + num2 + " = " + (num1 % num2));
+	                break;
+	        }
+	    }
+	}
+
 	
 	public void practice13() {
 	    System.out.print("정수 입력 : ");
