@@ -12,7 +12,7 @@ public class TokenMenu {
 		System.out.println("1. 지정 문자열");
 		System.out.println("2. 입력 문자열");
 		System.out.println("9. 프로그램 끝내기");
-		System.out.print("메뉴 선택 : ");
+		System.out.print("메뉴 번호 : ");
 		int num = sc.nextInt();
 		sc.nextLine();
 		switch(num) {
