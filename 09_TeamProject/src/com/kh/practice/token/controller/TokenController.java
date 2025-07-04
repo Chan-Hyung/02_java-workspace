@@ -7,7 +7,7 @@ public class TokenController {
 	public TokenController() {
 		
 	}
-	
+	/*
 	public String afterToken(String str) {
 	    StringTokenizer st = new StringTokenizer(str, " ");
 	    String result = "";
@@ -15,6 +15,15 @@ public class TokenController {
 	        result += st.nextToken();
 	    }
 	    return result;
+	}
+	*/
+	public String afterToken(String str) {
+		 StringTokenizer st = new StringTokenizer(str, " ");
+		 String result = "";
+		 while (st.hasMoreTokens()) {
+		        result += st.nextToken();
+		    }
+		 return result;
 	}
 
 
