@@ -25,7 +25,9 @@ public class FileCharDao {
 		
 		try {
 			// 1.  FileWriter 객체 생성
-			fw = new FileWriter("b_char.txt"/*, true */); // 해당 파일이 있으면 연결말, 없으면 만들어주고 연결까지
+			fw = new FileWriter("b_char.txt", true ); // 해당 파일이 있으면 연결말, 없으면 만들어주고 연결까지
+			// 두번째 인자값이 true이면 파일을 이어서 쓰겠다. ★디폴트값★
+			// 두번째 인자값이 false면 파일을 새로 쓰겠다.
 			
 			// 2. write 메소드 이용해서 데이터를 출력
 			fw.write("와! IO 재밌다...ㅎ"); // 한글은 2byte씩이라 한 글자씩 넘어옴(와 / ! / IO / 재 / 밌 / 다 이런식으로)
