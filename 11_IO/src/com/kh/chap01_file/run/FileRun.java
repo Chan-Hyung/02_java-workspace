@@ -7,7 +7,6 @@ public class FileRun {
 
 	public static void main(String[] args) {
 		/*
-		 * 
 		 * 메모리는 휘발성
 		 * 간단하게 파일(file) 만들어지는 과정
 		 * java.io.File 클래스 예외처리 필수
