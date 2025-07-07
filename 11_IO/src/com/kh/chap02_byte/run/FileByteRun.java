@@ -1,9 +1,13 @@
 package com.kh.chap02_byte.run;
 
+import com.kh.chap02_byte.model.dao.FileByteDao;
+
 public class FileByteRun {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		FileByteDao dao = new FileByteDao();
+		//dao.FileSave();
+		dao.FileRead();
 
 	}
 
