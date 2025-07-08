@@ -59,7 +59,13 @@ public class MusicController {
 					searchList.add(list.get(i));
 				}
 			}
-		}else {
+		}else if(menu == 2) { // 가수 검색
+            for(int i=0; i <list.size(); i++) {
+                if(list.get(i).getArtist().contains(keyword)) {
+                    searchList.add(list.get(i));
+                }
+            }
+        }else {
 			for(int i = 0; i<list.size(); i++) {
 				if(list.get(i).getArtist().contains(keyword)) {
 					searchList.add(list.get(i));
