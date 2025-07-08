@@ -46,7 +46,26 @@ public class Student {
 		return "Student [name=" + name + ", age=" + age + ", score=" + score + "]";
 	}
 	
+	@Override
+	public int hashCode() {// 모든 필드에 담긴 값이 일치하면 동일한 hashCode를 반환하도록
+		String str = name + age + score;
+		return str.hashCode();
+	}
 	
+	public boolean equals(Object obj) { // 현재 객체와 전달받은 객체의 각 필드값이 모두 일치하면 true, 하나라도 일치하지 않으면 false 반환
+		// this(현객체)	vs	obj(전달받은객체)
+		// this.name 	vs 	obj.name	일치한는지
+		// this.age 	vs	obj.age		일치하는지
+		// this.score 	vs	obj.score	일치하는지
+		
+		Student other = (Student)obj;
+		
+		if(this.name.equals(other.name) && this.age == other.age && this.score == other.score) {
+			return true;
+		}else {
+			return false;
+		}
+	}
 	
 	
 }
