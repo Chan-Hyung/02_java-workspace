@@ -52,7 +52,7 @@ public class MusicController {
 	
 	//심화버전
 	public ArrayList<Music> searchMusic(int menu, String keyword){
-		ArrayList<Music> searchList = new ArrayList<Music>();
+		ArrayList<Music> searchList = new ArrayList<Music>(); 
 		if(menu == 1) {
 			for(int i = 0; i<list.size(); i++) {
 				if(list.get(i).getTitle().contains(keyword)) {
